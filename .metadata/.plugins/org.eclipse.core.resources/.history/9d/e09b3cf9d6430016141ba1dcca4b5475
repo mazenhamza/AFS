@@ -1,0 +1,17 @@
+package game;
+
+import java.util.Scanner;
+
+public class GamePlay {
+	
+	public static void main(String args[]){
+		GameGenerator g = new GameGenerator();
+		int actual = g.generateNumber(4);
+		Scanner scan = new Scanner(System.in);
+		int guess = scan.nextInt();
+		System.out.println(g.comparNumbers(actual, guess));
+		
+		scan.close();
+	}
+
+}

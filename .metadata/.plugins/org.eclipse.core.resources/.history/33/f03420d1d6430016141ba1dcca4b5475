@@ -1,0 +1,12 @@
+package game;
+
+import java.util.Scanner;
+
+public class GamePlay {
+	
+	public static void main(String args[]){
+		Scanner scan = new Scanner(System.in);
+		int guess = scan.nextInt();
+	}
+
+}

@@ -23,9 +23,14 @@ public class GameGenerator {
 	}
 
 	public String comparNumbers(int a, int b){
+
 		String result = "";
 		String as =  Integer.toString(a);
 		String bs = Integer.toString(b);
+		if(as.length() != bs.length()){
+			System.out.println("Not the same length");
+			return null;
+		}
 		for(int i = 0; i<as.length(); i++){
 			for(int j = 0; j<bs.length(); j++){
 				if(as.charAt(i) == bs.charAt(j) && i == j){

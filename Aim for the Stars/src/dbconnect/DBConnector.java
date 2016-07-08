@@ -17,8 +17,8 @@ public class DBConnector {
 		try{
 			String driver = "com.mysql.jdbc.Driver";
 			String url = "jdbc:mysql://localhost:3306/test";
-			String username = "root";
-			String password = "loveyou1";
+			String username = "uname";
+			String password = "password";
 			Class.forName(driver);
 			
 			Connection conn = DriverManager.getConnection(url,username,password);
