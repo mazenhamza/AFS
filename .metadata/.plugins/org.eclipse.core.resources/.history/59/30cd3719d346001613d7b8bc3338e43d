@@ -1,0 +1,16 @@
+package game;
+
+
+import javax.swing.JFrame;
+
+public class GameFrame {
+	public void createFrame(){
+	
+	JFrame gameFrame = new JFrame();
+	gameFrame.setSize(505, 505);
+	gameFrame.setVisible(true);
+	gameFrame.add(text);;
+	
+	}
+
+}

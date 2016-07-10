@@ -1,0 +1,14 @@
+package game;
+
+import javax.swing.JFrame;
+
+public class GameFrame {
+	
+	public void createFrame(){
+	
+	JFrame gameFrame = new JFrame();
+	gameFrame.setSize(50, 50);
+	gameFrame.setVisible(true);
+	}
+
+}

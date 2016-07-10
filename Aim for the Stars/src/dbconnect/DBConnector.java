@@ -1,5 +1,7 @@
 package dbconnect;
 
+import game.GameFrame;
+
 public class DBConnector {
 
 	public static void main(String[] args) {
@@ -8,6 +10,8 @@ public class DBConnector {
 		tc.createUserTable();
 		tc.createScoresTable();
 		tc.createLogIn("username", "password", "fname", "lname");
+		GameFrame frame = new GameFrame();
+		frame.createFrame();
 
 	}
 
