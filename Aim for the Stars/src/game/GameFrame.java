@@ -1,20 +1,31 @@
 package game;
 
 
+import java.awt.TextArea;
+import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
-public class GameFrame {
+
+public class GameFrame extends JFrame {
+	private static final long serialVersionUID = 8438250875755724879L;
+	JButton add = new JButton("Add");
+	TextArea text = new TextArea("my area");
 	
-	JLabel label = new JLabel();
-	public void createFrame(){
+	public GameFrame(String title){
+		super(title);
+		setVisible(true);
+		setLocation(500, 300);
+		setSize(500, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		add(add);
+		add(text);
+		
 	
-	JFrame gameFrame = new JFrame();
-	gameFrame.setSize(505, 505);
-	gameFrame.setVisible(true);
-	label.setText("hello");
-	gameFrame.add(label);
+	}
 	
+	public static void main(String ... args){
+		GameFrame g = new GameFrame("Aim for the Stars");
+		
 	}
 
 }

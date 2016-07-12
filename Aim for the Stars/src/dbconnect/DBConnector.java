@@ -3,16 +3,13 @@ package dbconnect;
 import game.GameFrame;
 
 public class DBConnector {
-
+/*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		TableCreator tc = new TableCreator();
 		tc.createUserTable();
 		tc.createScoresTable();
 		tc.createLogIn("username", "password", "fname", "lname");
-		GameFrame frame = new GameFrame();
-		frame.createFrame();
-
 	}
-
+*/
 }

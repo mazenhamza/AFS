@@ -1,0 +1,26 @@
+package game;
+
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class GameFrame extends JFrame {
+	private static final long serialVersionUID = 8438250875755724879L;
+	JButton add = new JButton("Add");
+	
+	public GameFrame(String title){
+		super(title);
+		setVisible(true);
+		setLocation(500, 300);
+		setSize(500, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	
+	}
+	
+	public static void main(String ... args){
+		GameFrame g = new GameFrame("Aim for the Stars");
+		
+	}
+
+}

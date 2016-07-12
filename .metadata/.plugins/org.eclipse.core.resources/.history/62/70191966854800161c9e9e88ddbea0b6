@@ -1,0 +1,15 @@
+package game;
+
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class GameFrame extends JFrame {
+	private static final long serialVersionUID = 8438250875755724879L;
+	
+	public GameFrame(String title){
+		super(title);
+	
+	}
+
+}
