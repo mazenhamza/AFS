@@ -1,0 +1,7 @@
+package game;
+
+import java.awt.Panel;
+
+public class detailsPanel extends Panel{
+
+}

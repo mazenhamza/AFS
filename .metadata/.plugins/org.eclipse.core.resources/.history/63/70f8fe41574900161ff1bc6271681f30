@@ -1,0 +1,39 @@
+package gameframe;
+
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.TextArea;
+import java.awt.font.TextLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+public class GameFrame extends JFrame {
+	private static final long serialVersionUID = 8438250875755724879L;
+	JButton guess = new JButton("Guess");
+	JButton save = new JButton("Save");
+	TextArea text = new TextArea("my area");
+	
+	public GameFrame(String title){
+		super(title);
+		this.setLayout(new TextLayout(title, getFont(), null));
+		setVisible(true);
+		setLocation(420, 200);
+		setSize(500, 210);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container c = getContentPane();
+		c.add(text,BorderLayout.NORTH);
+		c.add(guess);
+		c.add(save);
+	}
+	
+	public static void main(String ... args){
+		GameFrame g = new GameFrame("Aim for the Stars");
+		
+	}
+
+}

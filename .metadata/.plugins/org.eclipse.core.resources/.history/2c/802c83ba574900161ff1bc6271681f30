@@ -1,0 +1,11 @@
+package gameframe;
+
+import java.awt.Panel;
+
+public class detailsPanel extends Panel{
+	
+	public detailsPanel(){
+		
+	}
+
+}

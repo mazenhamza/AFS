@@ -1,6 +1,6 @@
 package dbconnect;
 
-import game.GameFrame;
+import gameframe.GameFrame;
 
 public class DBConnector {
 /*
